@@ -54,10 +54,6 @@ export const App = () => {
         setError(error);
         setStatus('rejected');
       });
-
-    toast.promise(apiService, {
-      pending: 'Promise is pending',
-    });
   }, [imgName, page]);
 
   const handleFormSubmit = name => {
